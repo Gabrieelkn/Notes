@@ -7,6 +7,7 @@
 - **Loaded**: event raised when the element is built and added to the visual tree. Use it for initialization that needs the UI to exist.
 - **x:Name**: gives an element a name so code-behind can access it directly (e.g. `MyButton.Content = "Hi"`).
 - **Page.Resources**: a resource dictionary scoped to the page, for styles, brushes, converters and templates that the page's controls reuse via `{StaticResource Key}`.
+- **xmlns**: declares XML namespaces — tells the XAML parser where each element/attribute comes from (like `using` in C#). The default namespace covers standard controls (`Button`, `Grid`…), `xmlns:x` unlocks XAML features (`x:Name`, `x:Bind`…), and `xmlns:local` exposes your own project classes.
 
 ### Data and lists
 - **ObservableCollection<T>**: a collection that notifies the UI when items are added or removed, so a bound list updates automatically.
